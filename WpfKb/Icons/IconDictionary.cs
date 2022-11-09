@@ -8,7 +8,7 @@ namespace WpfKb
 {
     static class IconDictionary
     {
-        public static readonly Dictionary<string, string> RnErrorCodes = new Dictionary<string, string>
+        public static readonly Dictionary<string, string> Icons = new Dictionary<string, string>
         {
             { "arrow-right-circle", "m 8,12 h 8 m -4,4 4,-4 -4,-4 m 10,4 A 10,10 0 0 1 12,22 10,10 0 0 1 2,12 10,10 0 0 1 12,2 10,10 0 0 1 22,12 Z" },
             { "minus-circle", "m 8,12 h 8 m 6,0 A 10,10 0 0 1 12,22 10,10 0 0 1 2,12 10,10 0 0 1 12,2 10,10 0 0 1 22,12 Z" },
