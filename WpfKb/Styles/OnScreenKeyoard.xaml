@@ -75,6 +75,23 @@
                                 VerticalAlignment="Top"
                                 Foreground="{TemplateBinding TextBrush}"
                                 SnapsToDevicePixels="true" />
+
+                            <Path x:Name="PART_KeyPath"
+                                  Margin = "5, 5, 5, 5"
+                                  HorizontalAlignment = "Left"
+                                  VerticalAlignment = "Top"
+                                  SnapsToDevicePixels = "True"
+                                  Stroke = "White"
+                                  StrokeThickness = "1"
+                                  RenderTransformOrigin = "0,0"
+                                  >
+                                <Path.RenderTransform>
+                                    <ScaleTransform ScaleX="1.5"
+                                                    ScaleY="1.5"
+                                                    />
+                                </Path.RenderTransform>
+                            </Path>
+                            <!---->
                         </Grid>
                     </Border>
                 </ControlTemplate>

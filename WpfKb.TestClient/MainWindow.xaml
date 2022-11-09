@@ -31,13 +31,21 @@
             </StackPanel>
         </Border>
 
-        <WpfKb:FloatingTouchScreenKeyboard
+        <!--<WpfKb:FloatingTouchScreenKeyboard
             x:Name="Keyboard"
             IsOpen="True"
             Width="900"
             Height="400"
             PlacementTarget="{Binding ElementName=TestWindow}"
             Placement="Center"
+            AreAnimationsEnabled="True"
+            />-->
+
+        <WpfKb:OnScreenKeypad
+            Grid.Row="1"
+            x:Name="Keyboard"
+            Width="900"
+            Height="400"
             AreAnimationsEnabled="True"
             />
     </Grid>

@@ -25,6 +25,12 @@ namespace WpfKb.LogicalKeys
             KeyCode = keyCode;
         }
 
+        public VirtualKey(VirtualKeyCode keyCode, string pathData, string PlaceHolder)
+        {
+            PathData = pathData;
+            KeyCode = keyCode;
+        }
+
         public VirtualKey(VirtualKeyCode keyCode)
         {
             KeyCode = keyCode;

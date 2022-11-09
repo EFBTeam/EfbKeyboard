@@ -35,6 +35,20 @@ namespace WpfKb.LogicalKeys
             }
         }
 
+        private string _pathData;
+        public virtual string PathData
+        {
+            get { return _pathData; }
+            set
+            {
+                if (value != _pathData)
+                {
+                    _pathData = value;
+                    OnPropertyChanged("PathData");
+                }
+            }
+        }
+
         public virtual void Press()
         {
             OnKeyPressed();

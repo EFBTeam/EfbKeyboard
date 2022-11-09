@@ -5,6 +5,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 using WpfKb.LogicalKeys;
 
 namespace WpfKb.Controls
@@ -12,11 +13,13 @@ namespace WpfKb.Controls
     [TemplatePart(Name = ElementSurface, Type = typeof(Border))]
     [TemplatePart(Name = ElementMouseDownSurface, Type = typeof(Border))]
     [TemplatePart(Name = ElementKeyText, Type = typeof(TextBlock))]
+    [TemplatePart(Name = ElementKeyPath, Type = typeof(Path))]
     public class OnScreenKey : Control
     {
         private const string ElementSurface = "PART_Surface";
         private const string ElementMouseDownSurface = "PART_MouseDownSurface";
         private const string ElementKeyText = "PART_KeyText";
+        private const string ElementKeyPath = "PART_KeyPath";
         
         public static readonly DependencyProperty KeyProperty = DependencyProperty.Register("Key", typeof(ILogicalKey), typeof(OnScreenKey), new UIPropertyMetadata(null, OnKeyChanged));
 
@@ -42,6 +45,7 @@ namespace WpfKb.Controls
         private Border _keySurface;
         private Border _mouseDownSurface;
         private TextBlock _keyText;
+        private Path _keyPath;
         private Brush _keySurfaceBorderBrush;
         private Brush _keySurfaceBackground;
         private Brush _keyTextBrush;
@@ -145,11 +149,13 @@ namespace WpfKb.Controls
             _keySurface = Template.FindName(ElementSurface, this) as Border;
             _mouseDownSurface = Template.FindName(ElementMouseDownSurface, this) as Border;
             _keyText = Template.FindName(ElementKeyText, this) as TextBlock;
+            _keyPath = Template.FindName(ElementKeyPath, this) as Path;
 
             _keySurfaceBorderBrush = _keySurface?.BorderBrush;
             _keySurfaceBackground = _keySurface?.Background;
             _keyTextBrush = _keyText?.Foreground;
             _keyText?.SetBinding(TextBlock.TextProperty, new Binding("DisplayName") { Source = this.Key });
+            _keyPath?.SetBinding(Path.DataProperty, new Binding("PathData") { Source = this.Key });
         }
 
 
