@@ -72,6 +72,7 @@
     <Compile Include="Controls\AlpsKeypads\AlpsWeightKeypad.cs" />
     <Compile Include="Controls\AlpsKeypads\AlpsWindKeypad.cs" />
     <Compile Include="Controls\AlpsKeypads\AlpsTemperatureKeypad.cs" />
+    <Compile Include="Controls\AlpsKeypads\AlpsKeyboard.cs" />
     <Compile Include="Controls\FloatingTouchScreenKeyboard.xaml.cs">
       <DependentUpon>FloatingTouchScreenKeyboard.xaml</DependentUpon>
     </Compile>
