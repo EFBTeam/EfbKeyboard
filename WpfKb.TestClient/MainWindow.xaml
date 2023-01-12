@@ -41,12 +41,18 @@
             AreAnimationsEnabled="True"
             />-->
 
-        <WpfKb:OnScreenKeypad
+        <WpfKb:AlpsTimeKeypadWide2
             Grid.Row="1"
             x:Name="Keyboard"
-            Width="900"
-            Height="400"
+            Width="800"
+            Height="300"
             AreAnimationsEnabled="True"
             />
+        <!--<WpfKb:AlpsKeyboard
+            Grid.Row="1"
+            x:Name="Keyboard"
+            Width="800"
+            Height="300"
+            />-->
     </Grid>
 </Window>
