@@ -65,6 +65,9 @@
   <ItemGroup>
     <Compile Include="Behaviors\AutoHideBehavior.cs" />
     <Compile Include="Controls\AlpsKeypads\AlpsComboBoxKeypad.cs" />
+    <Compile Include="Controls\AlpsKeypads\AlpsTimeKeypadWide2.cs" />
+    <Compile Include="Controls\AlpsKeypads\AlpsTimeKeypadWide.cs" />
+    <Compile Include="Controls\AlpsKeypads\AlpsTimeKeypad.cs" />
     <Compile Include="Controls\FloatingTouchScreenKeyboard.xaml.cs">
       <DependentUpon>FloatingTouchScreenKeyboard.xaml</DependentUpon>
     </Compile>
