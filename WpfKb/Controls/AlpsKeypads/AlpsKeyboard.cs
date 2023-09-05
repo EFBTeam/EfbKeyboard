@@ -87,8 +87,8 @@ namespace WpfKb.Controls
                                    new OnScreenKey { GridRow = 1, GridColumn = 10, Key =  new EmptyKey(), GridWidth = new GridLength(0.8, GridUnitType.Star)},
 
                                    new OnScreenKey { GridRow = 2, GridColumn = 0, Key =  new EmptyKey (), GridWidth = new GridLength(0.8, GridUnitType.Star)},
-                                   new OnScreenKey { GridRow = 2, GridColumn = 1, Key =  new StringKey("Z", "X") },
-                                   new OnScreenKey { GridRow = 2, GridColumn = 2, Key =  new StringKey("X", "C") },
+                                   new OnScreenKey { GridRow = 2, GridColumn = 1, Key =  new StringKey("Z", "Z") },
+                                   new OnScreenKey { GridRow = 2, GridColumn = 2, Key =  new StringKey("X", "X") },
                                    new OnScreenKey { GridRow = 2, GridColumn = 3, Key =  new StringKey("C", "C") },
                                    new OnScreenKey { GridRow = 2, GridColumn = 4, Key =  new StringKey("V", "V") },
                                    new OnScreenKey { GridRow = 2, GridColumn = 5, Key =  new StringKey("B", "B") },
