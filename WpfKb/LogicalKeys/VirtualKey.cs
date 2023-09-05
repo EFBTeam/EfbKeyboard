@@ -35,6 +35,7 @@ namespace WpfKb.LogicalKeys
         public VirtualKey(VirtualKeyCode keyCode)
         {
             KeyCode = keyCode;
+            PathData = "";
         }
 
         public VirtualKey()
