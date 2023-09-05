@@ -23,6 +23,7 @@ namespace WpfKb.LogicalKeys
         {
             DisplayName = displayName;
             KeyCode = keyCode;
+            PathData = "";
         }
 
         public VirtualKey(VirtualKeyCode keyCode, string pathData, string PlaceHolder)
