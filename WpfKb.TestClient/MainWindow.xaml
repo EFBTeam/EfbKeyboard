@@ -25,12 +25,28 @@
             </StackPanel>
         </Border>
 
-        <WpfKb:FloatingTouchScreenKeyboard x:Name="Keyboard"
-                                           Width="900"
-                                           Height="400"
-                                           AreAnimationsEnabled="True"
-                                           IsOpen="True"
-                                           Placement="Center"
-                                           PlacementTarget="{Binding ElementName=TestWindow}" />
+        <!--<WpfKb:FloatingTouchScreenKeyboard
+            x:Name="Keyboard"
+            IsOpen="True"
+            Width="900"
+            Height="400"
+            PlacementTarget="{Binding ElementName=TestWindow}"
+            Placement="Center"
+            AreAnimationsEnabled="True"
+            />-->
+
+        <!--<WpfKb:AlpsTimeKeypadWide2
+            Grid.Row="1"
+            x:Name="Keyboard"
+            Width="800"
+            Height="300"
+            AreAnimationsEnabled="True"
+            />-->
+        <WpfKb:AlpsGlideslopeKeypad
+            Grid.Row="1"
+            x:Name="Keyboard"
+            Width="800"
+            Height="300"
+            />
     </Grid>
 </Window>

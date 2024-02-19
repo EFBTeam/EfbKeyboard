@@ -24,6 +24,7 @@ namespace WpfKb.LogicalKeys
         {
             DisplayName = displayName;
             _stringToSimulate = stringToSimulate;
+            PathData = "";
         }
 
         public StringKey()
