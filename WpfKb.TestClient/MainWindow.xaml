@@ -42,7 +42,7 @@
             Height="300"
             AreAnimationsEnabled="True"
             />-->
-        <WpfKb:AlpsGlideslopeKeypad
+        <WpfKb:AlpsMachKeypad
             Grid.Row="1"
             x:Name="Keyboard"
             Width="800"
