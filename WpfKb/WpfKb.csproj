@@ -5,7 +5,7 @@
     <UseWPF>true</UseWPF>
 	<Authors>michaelnoonan, imasmitja</Authors>
     <Title>WpfKb</Title>
-	<AssemblyVersion>2.0.0.0</AssemblyVersion>
+	<AssemblyVersion>0.4</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
     <Description>An on-screen or touch screen keyboard control and toolkit for WPF.</Description>
