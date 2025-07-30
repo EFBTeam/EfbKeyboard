@@ -9,7 +9,8 @@
        Placement="Center"
        AllowsTransparency="True"
        HorizontalOffset="0"
-       VerticalOffset="0">
+       VerticalOffset="0"
+       >
     <Grid x:Name="LayoutGrid">
         <Interactivity:Interaction.Behaviors>
             <Behaviors:AutoHideBehavior AreAnimationsEnabled="{Binding AreAnimationsEnabled}"
@@ -19,7 +20,8 @@
                                         MaxOpacity="{Binding MaximumKeyboardOpacity}"
                                         HideDelay="{Binding KeyboardHideDelay}"
                                         HideDuration="{Binding KeyboardHideAnimationDuration}"
-                                        ShowDuration="{Binding KeyboardShowAnimationDuration}" />
+                                        ShowDuration="{Binding KeyboardShowAnimationDuration}"
+                                        />
         </Interactivity:Interaction.Behaviors>
 
         <Grid.RowDefinitions>
@@ -33,18 +35,21 @@
         <Border x:Name="DragHandle"
                 Grid.Column="0"
                 BorderBrush="LightGray"
-                BorderThickness="10 10 10 5"
+                BorderThickness="10,10,10,5"
                 Background="DarkGray"
                 CornerRadius="10, 10, 0, 0"
                 PreviewMouseDown="DragHandle_PreviewMouseDown"
                 PreviewMouseMove="DragHandle_PreviewMouseMove"
-                PreviewMouseUp="DragHandle_PreviewMouseUp">
+                PreviewMouseUp="DragHandle_PreviewMouseUp"
+                >
             <Viewbox>
                 <TextBlock Text="Drag to move"
-                           Style="{DynamicResource Text.Detail}">
+                           Style="{DynamicResource Text.Detail}"
+                           >
                     <Interactivity:Interaction.Behaviors>
                         <Behaviors:AutoHideBehavior ActionWhenClicked="None"
-                                                    IsAllowedToHide="{Binding IsDragHelperAllowedToHide}" />
+                                                    IsAllowedToHide="{Binding IsDragHelperAllowedToHide}"
+                                                    />
                     </Interactivity:Interaction.Behaviors>
                 </TextBlock>
             </Viewbox>
@@ -53,7 +58,8 @@
                 Grid.ColumnSpan="2"
                 Background="LightGray"
                 Padding="10"
-                CornerRadius="0, 10, 10, 10">
+                CornerRadius="0, 10, 10, 10"
+                >
             <Controls:OnScreenWebKeyboard AreAnimationsEnabled="{Binding AreAnimationsEnabled}" />
         </Border>
     </Grid>

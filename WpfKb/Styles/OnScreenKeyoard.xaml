@@ -1,6 +1,7 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:controls="clr-namespace:WpfKb.Controls">
+                    xmlns:controls="clr-namespace:WpfKb.Controls"
+                    >
 
     <Style TargetType="{x:Type controls:OnScreenKey}">
         <Setter Property="OutsideBorderBrush" Value="#1A1A1A" />
@@ -53,44 +54,46 @@
                             BorderBrush="{TemplateBinding OutsideBorderBrush}"
                             BorderThickness="{TemplateBinding OutsideBorderThickness}"
                             CornerRadius="3"
-                            SnapsToDevicePixels="true">
+                            SnapsToDevicePixels="true"
+                            >
                         <Grid>
                             <Border x:Name="PART_Surface"
                                     Background="{TemplateBinding Background}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
-                                    CornerRadius="3" />
+                                    CornerRadius="3"
+                                    />
 
                             <Border x:Name="PART_MouseDownSurface"
                                     Background="White"
                                     CornerRadius="3"
                                     Opacity="0"
-                                    SnapsToDevicePixels="True" />
+                                    SnapsToDevicePixels="True"
+                                    />
 
                             <TextBlock x:Name="PART_KeyText"
-                                Margin="3,0,0,0"
-                                FontSize="20"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Top"
-                                Foreground="{TemplateBinding TextBrush}"
-                                SnapsToDevicePixels="true" />
+                                       Margin="3,0,0,0"
+                                       FontSize="20"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Foreground="{TemplateBinding TextBrush}"
+                                       SnapsToDevicePixels="true"
+                                       />
 
                             <Path x:Name="PART_KeyPath"
-                                  Margin = "5, 5, 5, 5"
-                                  HorizontalAlignment = "Left"
-                                  VerticalAlignment = "Top"
-                                  SnapsToDevicePixels = "True"
-                                  Stroke = "White"
-                                  StrokeThickness = "1"
-                                  RenderTransformOrigin = "0,0"
+                                  Margin="5,5,5,5"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Top"
+                                  SnapsToDevicePixels="True"
+                                  Stroke="White"
+                                  StrokeThickness="1"
+                                  RenderTransformOrigin="0,0"
                                   >
                                 <Path.RenderTransform>
-                                    <ScaleTransform ScaleX="1.5"
-                                                    ScaleY="1.5"
-                                                    />
+                                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
                                 </Path.RenderTransform>
                             </Path>
-                            <!---->
+                            <!--  -->
                         </Grid>
                     </Border>
                 </ControlTemplate>
